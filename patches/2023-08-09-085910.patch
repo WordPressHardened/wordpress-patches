@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 244eee8..8546b1f 100644
+--- a/package.json
++++ b/package.json
+@@ -8,7 +8,7 @@
+ 	},
+ 	"engines": {
+ 		"node": ">=14.15.0",
+-		"npm": ">=6.14.8 <7"
++		"npm": ">=6.14.8"
+ 	},
+ 	"author": "The WordPress Contributors",
+ 	"license": "GPL-2.0-or-later",

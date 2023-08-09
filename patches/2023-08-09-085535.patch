@@ -1,0 +1,172 @@
+diff --git a/src/wp-admin/about.php b/src/wp-admin/about.php
+index 02dd6ab..954b7b6 100644
+--- a/src/wp-admin/about.php
++++ b/src/wp-admin/about.php
+@@ -2,15 +2,15 @@
+ /**
+  * About This Version administration panel.
+  *
+- * @package WordPress
++ * @package WordPressHardened
+  * @subpackage Administration
+  */
+ 
+-/** WordPress Administration Bootstrap */
++/** WordPressHardened Administration Bootstrap */
+ require_once __DIR__ . '/admin.php';
+ 
+ // Used in the HTML title tag.
+-/* translators: Page title of the About WordPress page in the admin. */
++/* translators: Page title of the About WordPressHardened page in the admin. */
+ $title = _x( 'About', 'page title' );
+ 
+ list( $display_version ) = explode( '-', get_bloginfo( 'version' ) );
+@@ -25,7 +25,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 					<?php
+ 					printf(
+ 						/* translators: %s: Version number. */
+-						__( 'WordPress %s' ),
++						__( 'WordPressHardened %s' ),
+ 						$display_version
+ 					);
+ 					?>
+@@ -49,13 +49,13 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 					<?php
+ 					printf(
+ 						/* translators: %s: Version number. */
+-						__( 'Welcome to WordPress %s' ),
++						__( 'Welcome to WordPressHardened %s' ),
+ 						$display_version
+ 					);
+ 					?>
+ 				</h2>
+ 				<p class="is-subheading">
+-					<?php _e( 'Create beautiful and compelling websites more efficiently than ever. Whether you want to build an entire site without coding or are a developer looking to customize every detail, WordPress 6.3 has something for you.' ); ?>
++					<?php _e( 'Create beautiful and compelling websites more efficiently than ever. Whether you want to build an entire site without coding or are a developer looking to customize every detail, WordPressHardened 6.3 has something for you.' ); ?>
+ 				</p>
+ 			</div>
+ 		</div>
+@@ -68,7 +68,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 			</div>
+ 			<div class="column is-vertically-aligned-center">
+ 				<h3><?php _e( 'Do everything in the Site Editor' ); ?></h3>
+-				<p><?php _e( 'WordPress 6.3 brings your content, templates, and patterns together in the Site Editor for the first time. Add pages, browse style variations, create synced patterns, and enjoy fine-tuned control over your navigation menus. No more time wasted switching across different site areas—now you can focus on what matters most. Creation to completion, all in one place.' ); ?></p>
++				<p><?php _e( 'WordPressHardened 6.3 brings your content, templates, and patterns together in the Site Editor for the first time. Add pages, browse style variations, create synced patterns, and enjoy fine-tuned control over your navigation menus. No more time wasted switching across different site areas—now you can focus on what matters most. Creation to completion, all in one place.' ); ?></p>
+ 			</div>
+ 		</div>
+ 
+@@ -143,7 +143,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 					</svg>
+ 				</div>
+ 				<h3 style="margin-top:calc(var(--gap) * 0.75);margin-bottom:calc(var(--gap) * 0.5)"><?php _e( 'Performance gets a boost' ); ?></h3>
+-				<p><?php _e( 'WordPress 6.3 has 170+ performance updates, including defer and async support for the Scripts API and fetchpriority support for images. These improvements can improve your website&#8217;s load time as perceived by visitors, along with block template resolution, image lazy-loading, and the emoji loader.' ); ?></p>
++				<p><?php _e( 'WordPressHardened 6.3 has 170+ performance updates, including defer and async support for the Scripts API and fetchpriority support for images. These improvements can improve your website&#8217;s load time as perceived by visitors, along with block template resolution, image lazy-loading, and the emoji loader.' ); ?></p>
+ 			</div>
+ 			<div class="column">
+ 				<div class="about__image">
+@@ -153,7 +153,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 					</svg>
+ 				</div>
+ 				<h3 style="margin-top:calc(var(--gap) * 0.75);margin-bottom:calc(var(--gap) * 0.5)"><?php _e( 'Accessibility remains a core focus' ); ?></h3>
+-				<p><?php _e( 'Incorporating more than 50 accessibility improvements across the platform, WordPress 6.3 is more accessible than ever. Improved labeling, optimized tab and arrow-key navigation, revised heading hierarchy, and new controls in the admin image editor allow those using assistive technologies to navigate more easily.' ); ?></p>
++				<p><?php _e( 'Incorporating more than 50 accessibility improvements across the platform, WordPressHardened 6.3 is more accessible than ever. Improved labeling, optimized tab and arrow-key navigation, revised heading hierarchy, and new controls in the admin image editor allow those using assistive technologies to navigate more easily.' ); ?></p>
+ 			</div>
+ 		</div>
+ 
+@@ -240,7 +240,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 					<?php
+ 					printf(
+ 						/* translators: %s: Version number. */
+-						__( 'Learn more about WordPress %s' ),
++						__( 'Learn more about WordPressHardened %s' ),
+ 						$display_version
+ 					);
+ 					?>
+@@ -248,8 +248,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 				<p>
+ 					<?php
+ 					printf(
+-						/* translators: 1: Learn WordPress link, 2: Workshops link. */
+-						__( '<a href="%1$s">Learn WordPress</a> is a free resource for new and experienced WordPress users. Learn is stocked with how-to videos on using various features in WordPress, <a href="%2$s">interactive events</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of WordPress.' ),
++						/* translators: 1: Learn WordPressHardened link, 2: Workshops link. */
++						__( '<a href="%1$s">Learn WordPressHardened</a> is a free resource for new and experienced WordPressHardened users. Learn is stocked with how-to videos on using various features in WordPressHardened, <a href="%2$s">interactive events</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of WordPressHardened.' ),
+ 						'https://learn.wordpress.org/',
+ 						'https://learn.wordpress.org/online-workshops/'
+ 					);
+@@ -269,8 +269,8 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 				<p style="margin-top:calc(var(--gap) / 2);">
+ 					<?php
+ 					printf(
+-						/* translators: %s: WordPress Field Guide link. */
+-						__( 'Check out the latest version of the <a href="%s">WordPress Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPress.' ),
++						/* translators: %s: WordPressHardened Field Guide link. */
++						__( 'Check out the latest version of the <a href="%s">WordPressHardened Field Guide</a>. It is overflowing with detailed developer notes to help you build with WordPressHardened.' ),
+ 						__( 'https://make.wordpress.org/core/2023/07/18/wordpress-6-3-field-guide/' )
+ 					);
+ 					?>
+@@ -287,10 +287,10 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
+ 				<p style="margin-top:calc(var(--gap) / 2);">
+ 					<?php
+ 					printf(
+-						/* translators: 1: WordPress Release Notes link, 2: WordPress version number. */
+-						__( '<a href="%1$s">Read the WordPress %2$s Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release.' ),
++						/* translators: 1: WordPressHardened Release Notes link, 2: WordPressHardened version number. */
++						__( '<a href="%1$s">Read the WordPressHardened %2$s Release Notes</a> for more information on the included enhancements and issues fixed, installation information, developer notes and resources, release contributors, and the list of file changes in this release.' ),
+ 						sprintf(
+-							/* translators: %s: WordPress version number. */
++							/* translators: %s: WordPressHardened version number. */
+ 							esc_url( __( 'https://wordpress.org/documentation/wordpress-version/version-%s/' ) ),
+ 							'6-3'
+ 						),
+@@ -338,24 +338,24 @@ __( 'Security Releases' );
+ __( 'Maintenance and Security Release' );
+ __( 'Maintenance and Security Releases' );
+ 
+-/* translators: %s: WordPress version number. */
++/* translators: %s: WordPressHardened version number. */
+ __( '<strong>Version %s</strong> addressed one security issue.' );
+-/* translators: %s: WordPress version number. */
++/* translators: %s: WordPressHardened version number. */
+ __( '<strong>Version %s</strong> addressed some security issues.' );
+ 
+-/* translators: 1: WordPress version number, 2: Plural number of bugs. */
++/* translators: 1: WordPressHardened version number, 2: Plural number of bugs. */
+ _n_noop(
+ 	'<strong>Version %1$s</strong> addressed %2$s bug.',
+ 	'<strong>Version %1$s</strong> addressed %2$s bugs.'
+ );
+ 
+-/* translators: 1: WordPress version number, 2: Plural number of bugs. Singular security issue. */
++/* translators: 1: WordPressHardened version number, 2: Plural number of bugs. Singular security issue. */
+ _n_noop(
+ 	'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug.',
+ 	'<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs.'
+ );
+ 
+-/* translators: 1: WordPress version number, 2: Plural number of bugs. More than one security issue. */
++/* translators: 1: WordPressHardened version number, 2: Plural number of bugs. More than one security issue. */
+ _n_noop(
+ 	'<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug.',
+ 	'<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs.'
+@@ -364,14 +364,14 @@ _n_noop(
+ /* translators: %s: Documentation URL. */
+ __( 'For more information, see <a href="%s">the release notes</a>.' );
+ 
+-/* translators: 1: WordPress version number, 2: Link to update WordPress */
+-__( 'Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href="%2$s">update to the latest version of WordPress</a>.' );
++/* translators: 1: WordPressHardened version number, 2: Link to update WordPressHardened */
++__( 'Important! Your version of WordPressHardened (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href="%2$s">update to the latest version of WordPressHardened</a>.' );
+ 
+-/* translators: 1: WordPress version number, 2: Link to update WordPress */
+-__( 'Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href="%2$s">update to the latest version of WordPress</a>.' );
++/* translators: 1: WordPressHardened version number, 2: Link to update WordPressHardened */
++__( 'Important! Your version of WordPressHardened (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href="%2$s">update to the latest version of WordPressHardened</a>.' );
+ 
+-/* translators: %s: The major version of WordPress for this branch. */
+-__( 'This is the final release of WordPress %s' );
++/* translators: %s: The major version of WordPressHardened for this branch. */
++__( 'This is the final release of WordPressHardened %s' );
+ 
+-/* translators: The localized WordPress download URL. */
++/* translators: The localized WordPressHardened download URL. */
+ __( 'https://wordpress.org/download/' );

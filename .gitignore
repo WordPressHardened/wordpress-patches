@@ -1,0 +1,4 @@
+# Wordpress - ignore core, configuration, examples, uploads and logs.
+
+src
+wordpress-*

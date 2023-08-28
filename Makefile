@@ -21,6 +21,7 @@ clone:
 	@if [ -d $(SRC_DIR) ]; then \
 		echo "Directory $(SRC_DIR) already exists. Delete it to clone again."; \
 	else \
+	  	echo "Cloning $(UPSTREAM) branch $(BRANCH) to $(SRC_DIR)..."; \
 		git clone -b $(BRANCH) $(UPSTREAM) $(SRC_DIR); \
 	fi
 
